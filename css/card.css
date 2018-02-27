@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	line-height: 1.6;
+	font-size: 17px;
+	background: lightgray;
+	text-decoration: none;
+
+}
+
+
+.main-header{
+	background: gray;
+	padding-top: 10px;
+
+}
+
+.title{
+	padding:25px 0;
+	margin-top: 0;
+	text-transform: capitalize;
+	font-size: 2.5em;
+}
+
+.main-header,
+.main-footer{
+	text-align: center;
+}
+
+
+.main-footer{
+	background: gray;
+}
+
+.main-footer p{
+	padding:20px 0;
+}
+
+img{
+	width:100%;
+}
+
+.container{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.card{
+	background: white;
+	margin-bottom: 25px;
+
+}
+
+.card:hover{
+box-shadow: 0 1px 15px rgba(0,0,0,.6) 
+}
+
+.card a{
+	text-decoration: none;
+	color:#000;
+}
+
+.card-content{
+	padding:15px;
+}
+
+h2{
+	margin-top: 0;
+	font-weight: lighter;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main-section{
+	flex: 1;
+}
+
+.main-header{
+	margin-bottom: 50px;
+}
+
+
+
+
+
+@media(min-width: 679px){
+    .container{
+    	width:80%;
+    	margin:0 auto;
+    }
+
+    .cards{
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    }
+
+    .card{
+         flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media(min-width: 1000px){
+.container{
+	width:70%;
+	max-width: 1150px;
+}
+
+.card{
+	flex:0 1 calc(33% - 1em);
+}
+}
